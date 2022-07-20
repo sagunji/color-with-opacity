@@ -1,5 +1,5 @@
 {
-  "name": "color-without-opacity",
+  "name": "color-with-opacity",
   "version": "1.0.0",
   "description": "NPM pkg to get equivalent color of hex color value with opacity",
   "main": "dist/cjs/index.js",
