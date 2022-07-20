@@ -1,6 +1,6 @@
 {
   "name": "color-with-opacity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NPM pkg to mix opacity to a solid color and get a solid equivalent color",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
