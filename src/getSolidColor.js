@@ -8,11 +8,11 @@
  */
 function getSolidColor(color, opacity = 0.6) {
   const deriveHex = color.replace("#", "").split(/(?=(?:..)*$)/);
-  const r = Math.floor(`0x${deriveHex[0]}` * opacity + 0xff * (1 - a));
-  const g = Math.floor(`0x${deriveHex[1]}` * opacity + 0xff * (1 - a));
-  const b = Math.floor(`0x${deriveHex[2]}` * opacity + 0xff * (1 - a));
+  const r = Math.floor(`0x${deriveHex[0]}` * opacity + 0xff * (1 - opacity));
+  const g = Math.floor(`0x${deriveHex[1]}` * opacity + 0xff * (1 - opacity));
+  const b = Math.floor(`0x${deriveHex[2]}` * opacity + 0xff * (1 - opacity));
 
   return "#" + ((r << 16) | (g << 8) | b).toString(16);
 }
 
-export default getSolidColor;
+module.exports = getSolidColor;
