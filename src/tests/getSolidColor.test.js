@@ -24,24 +24,26 @@ describe("Function validity", () => {
   });
 
   test("Provde undefined value", () => {
-    expect(getSolidColor(undefined)).toThrow(
-      "Null or undefined value for color."
-    );
+    expect(() => {
+      getSolidColor(undefined);
+    }).toThrow("Null or undefined value for color.");
   });
 
   test("Provde null value", () => {
-    expect(getSolidColor(null)).toThrow("Null or undefined value for color.");
+    expect(() => {
+      getSolidColor(null);
+    }).toThrow("Null or undefined value for color.");
   });
 
   test("Provde wrong hex value", () => {
-    expect(getSolidColor("#ZZXXVV")).toThrow(
+    expect(() => getSolidColor("#ZZXXVV")).toThrow(
       "#ZZXXVV is not a valid hex value."
     );
   });
 
   test("Provde random value", () => {
-    expect(getSolidColor("dadsad")).toThrow(
-      "#dadsad is not a valid hex value."
-    );
+    expect(() => {
+      getSolidColor("dadsad");
+    }).toThrow("dadsad is not a valid hex value.");
   });
 });
