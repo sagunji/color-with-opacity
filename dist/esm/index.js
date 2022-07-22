@@ -1,2 +1,2 @@
-function t(t,o=.6){const r=t.replace("#","").split(/(?=(?:..)*$)/);return"#"+(Math.floor(`0x${r[0]}`*o+255*(1-a))<<16|Math.floor(`0x${r[1]}`*o+255*(1-a))<<8|Math.floor(`0x${r[2]}`*o+255*(1-a))).toString(16)}export{t as default};
+var r=function(r,o=.6){if(!r)throw new Error("Null or undefined value for color.");if(!/^#[0-9A-F]{6}$/i.test(r))throw new Error(`${r} is not a valid hex value.`);const t=r.replace("#","").split(/(?=(?:..)*$)/);return"#"+(Math.floor(`0x${t[0]}`*o+255*(1-o))<<16|Math.floor(`0x${t[1]}`*o+255*(1-o))<<8|Math.floor(`0x${t[2]}`*o+255*(1-o))).toString(16)};export{r as default};
 //# sourceMappingURL=index.js.map
